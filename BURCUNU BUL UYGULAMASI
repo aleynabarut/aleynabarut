@@ -1,0 +1,161 @@
+#!/bin/bash
+echo "isminiz nedir?"
+read isim 
+echo  "$isim burcunu öğrenmek istiyor musun? evet yada hayir yaz"
+read evet
+case $evet in 
+evet) 
+clear
+echo "_____________________________________"
+echo "| 1. ocak"
+echo "| 2. Şubat"
+echo "| 3. mart "
+echo "| 4. nisan"
+echo "| 5.mayıs"
+echo "| 6.haziran"
+echo "| 7.temmuz"
+echo "| 8.ağustos"
+echo "| 9.eylül"
+echo "| 10.ekim"
+echo "| 11.kasım"
+echo "| 12.aralık"
+
+echo -n "Bir Ay Degeri  sayı olarak Giriniz :"
+
+read deger
+
+case $deger in
+1) 
+echo "ocağın kacı?"
+read deger
+if [ $deger -lt 21 ]
+then 
+echo " sen oğlak burcusun"
+else 
+echo " sen kova burcusun"
+fi
+;;
+2) 
+echo "Şubatın kacı?"
+read deger
+if [ $deger -lt 18 ]
+then 
+echo " sen kova burcusun"
+else 
+echo " sen balık burcusun"
+fi
+;;
+
+3) 
+echo "martın kacı?"
+read deger
+if [ $deger -lt 21 ]
+then 
+echo " sen balık burcusun"
+else 
+echo " sen koç burcusun"
+fi
+;;
+4) 
+echo "nisanın kacı?"
+read deger
+if [ $deger -lt 21 ]
+then 
+echo " sen koç burcusun"
+else 
+echo " sen boğa burcusun"
+fi
+;;
+
+5) 
+echo "mayısın kacı?"
+read deger
+if [ $deger -lt 21 ]
+then 
+echo " sen boğa burcusun"
+else 
+echo " sen ikizler burcusun"
+fi
+;;
+6) 
+echo "haziranın kacı?"
+read deger
+if [ $deger -lt 22 ]
+then 
+echo " sen  ikizler burcusun"
+else 
+echo " sen yengeç burcusun"
+fi
+;;
+7) 
+echo "temmuzun kacı?"
+read deger
+if [ $deger -lt 23 ]
+then 
+echo " sen yengeç burcusun"
+else 
+echo " sen aslan burcusun"
+fi
+;;
+8) 
+echo "ağustosun kacı?"
+read deger
+if [ $deger -lt 22 ]
+then 
+echo " sen aslan burcusun"
+else 
+echo " sen başak burcusun"
+fi
+;;
+9) 
+echo "Eylülün kacı?"
+read deger
+if [ $deger -lt 23 ]
+then 
+echo " sen başak burcusun"
+else 
+echo " sen terazi burcusun"
+fi
+;;
+10) 
+echo "Ekimin kacı?"
+read deger
+if [ $deger -lt 24 ]
+then 
+echo " sen terazi burcusun"
+else 
+echo " sen akrep burcusun"
+fi
+;;
+11) 
+echo "Kasımın kacı?"
+read deger
+if [ $deger -lt 23 ]
+then 
+echo " sen akrep burcusun"
+else 
+echo " sen yay burcusun"
+fi
+;;
+12) 
+echo "aralık kacı?"
+read deger
+if [ $deger -lt 22 ]
+then 
+echo " sen yay burcusun"
+else 
+echo " sen oğlak burcusun"
+fi
+;;
+esac
+;;
+
+hayir)
+echo "güle güle o zaman"
+
+exit
+;;
+*)
+echo " yanlış yazdın güle güle "
+esac
+
